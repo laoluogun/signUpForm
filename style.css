@@ -1,5 +1,5 @@
 /*Removed normalize.css*/
-:root {
+* {
     padding: 0px;
     margin: 0px;
     line-height: 1.5em;
@@ -31,8 +31,6 @@
 }
 
 
-
-
 @font-face {
     font-family: 'poppinsblack';
     src: url('fonts/webfontkit-20240829-172854/poppins-black-webfont.woff2') format('woff2'),
@@ -43,7 +41,27 @@
 }
 
 body {
+    display: flex;
     font-size: 36px;
     font-family: "poppinsregular";
+    flex-direction: row;
+}
+
+.image {
+    display: flex;
+    flex: 3.5;
+    background-image:url('purpleflower.webp');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+.main {
+    display: flex;
+    flex: 6.5;
 }
 
